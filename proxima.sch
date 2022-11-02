@@ -1,0 +1,130 @@
+EESchema Schematic File Version 4
+EELAYER 30 0
+EELAYER END
+$Descr A4 11693 8268
+encoding utf-8
+Sheet 1 1
+Title ""
+Date ""
+Rev ""
+Comp ""
+Comment1 ""
+Comment2 ""
+Comment3 ""
+Comment4 ""
+$EndDescr
+$Comp
+L Device:C C?
+U 1 1 6362C072
+P 1150 2700
+F 0 "C?" V 898 2700 50  0000 C CNN
+F 1 "C" V 989 2700 50  0000 C CNN
+F 2 "" H 1188 2550 50  0001 C CNN
+F 3 "~" H 1150 2700 50  0001 C CNN
+	1    1150 2700
+	0    1    1    0   
+$EndComp
+$Comp
+L Device:CP1 C?
+U 1 1 6362C51F
+P 3150 3250
+F 0 "C?" H 3265 3296 50  0000 L CNN
+F 1 "470" H 3265 3205 50  0000 L CNN
+F 2 "" H 3150 3250 50  0001 C CNN
+F 3 "~" H 3150 3250 50  0001 C CNN
+	1    3150 3250
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:D_Bridge_+-AA D?
+U 1 1 6362D2C4
+P 1850 2850
+F 0 "D?" H 2194 2896 50  0000 L CNN
+F 1 "D_Bridge_+-AA" H 2194 2805 50  0000 L CNN
+F 2 "" H 1850 2850 50  0001 C CNN
+F 3 "~" H 1850 2850 50  0001 C CNN
+	1    1850 2850
+	1    0    0    -1  
+$EndComp
+$Comp
+L Diode:DZ2S051X0L D?
+U 1 1 6362E947
+P 2700 3250
+F 0 "D?" V 2654 3329 50  0000 L CNN
+F 1 "DZ2S051X0L" V 2745 3329 50  0000 L CNN
+F 2 "Diode_SMD:D_SOD-523" H 2700 3075 50  0001 C CNN
+F 3 "https://industrial.panasonic.com/content/data/SC/ds/ds4/DZ2S05100L_E.pdf" H 2700 3250 50  0001 C CNN
+	1    2700 3250
+	0    1    1    0   
+$EndComp
+$Comp
+L Device:R_US R?
+U 1 1 6362F5CB
+P 1150 3000
+F 0 "R?" V 945 3000 50  0000 C CNN
+F 1 "470K" V 1036 3000 50  0000 C CNN
+F 2 "" V 1190 2990 50  0001 C CNN
+F 3 "~" H 1150 3000 50  0001 C CNN
+	1    1150 3000
+	0    1    1    0   
+$EndComp
+$Comp
+L Device:R_US R?
+U 1 1 63630132
+P 1150 3400
+F 0 "R?" V 945 3400 50  0000 C CNN
+F 1 "100" V 1036 3400 50  0000 C CNN
+F 2 "" V 1190 3390 50  0001 C CNN
+F 3 "~" H 1150 3400 50  0001 C CNN
+	1    1150 3400
+	0    1    1    0   
+$EndComp
+$Comp
+L power:AC #PWR?
+U 1 1 6363069B
+P 650 2700
+F 0 "#PWR?" H 650 2600 50  0001 C CNN
+F 1 "AC" H 650 2975 50  0000 C CNN
+F 2 "" H 650 2700 50  0001 C CNN
+F 3 "" H 650 2700 50  0001 C CNN
+	1    650  2700
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	1300 3000 1300 2850
+Wire Wire Line
+	1850 2550 1450 2550
+Wire Wire Line
+	1450 2550 1450 2850
+Wire Wire Line
+	1450 2850 1300 2850
+Connection ~ 1300 2850
+Wire Wire Line
+	1300 2850 1300 2700
+Wire Wire Line
+	1000 3000 1000 2700
+Wire Wire Line
+	650  2700 1000 2700
+Connection ~ 1000 2700
+Wire Wire Line
+	2150 2850 2700 2850
+Wire Wire Line
+	2700 2850 2700 3100
+Wire Wire Line
+	2700 3400 1550 3400
+Wire Wire Line
+	1550 3400 1550 2850
+Wire Wire Line
+	2700 3400 3150 3400
+Connection ~ 2700 3400
+Wire Wire Line
+	3150 3100 3150 2850
+Wire Wire Line
+	3150 2850 2700 2850
+Connection ~ 2700 2850
+Wire Wire Line
+	1550 3400 1300 3400
+Connection ~ 1550 3400
+Wire Wire Line
+	1000 3400 800  3400
+$EndSCHEMATC
