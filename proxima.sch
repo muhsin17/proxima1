@@ -139,7 +139,7 @@ F 3 "https://standexelectronics.com/wp-content/uploads/datasheet_reed_relay_DIP.
 	1    0    0    -1  
 $EndComp
 Wire Wire Line
-	8150 3100 7750 3100
+	8150 3100 7850 3100
 Wire Wire Line
 	6900 3100 6900 3200
 Connection ~ 6900 3200
@@ -204,8 +204,6 @@ Wire Wire Line
 Wire Wire Line
 	6700 4300 7150 4300
 Wire Wire Line
-	8050 4100 8050 3700
-Wire Wire Line
 	8050 3700 8150 3700
 $Comp
 L power:GND #PWR?
@@ -225,4 +223,27 @@ Wire Wire Line
 Connection ~ 7750 3100
 Wire Wire Line
 	7750 3100 6900 3100
+$Comp
+L Diode:1N4007 D?
+U 1 1 636B8955
+P 7850 3750
+F 0 "D?" V 7804 3829 50  0000 L CNN
+F 1 "1N4007" V 7895 3829 50  0000 L CNN
+F 2 "Diode_THT:D_DO-41_SOD81_P10.16mm_Horizontal" H 7850 3575 50  0001 C CNN
+F 3 "http://www.vishay.com/docs/88503/1n4001.pdf" H 7850 3750 50  0001 C CNN
+	1    7850 3750
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	7850 3900 8050 3900
+Wire Wire Line
+	8050 3700 8050 3900
+Connection ~ 8050 3900
+Wire Wire Line
+	8050 3900 8050 4100
+Wire Wire Line
+	7850 3600 7850 3100
+Connection ~ 7850 3100
+Wire Wire Line
+	7850 3100 7750 3100
 $EndSCHEMATC
